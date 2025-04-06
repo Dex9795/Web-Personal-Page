@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img style="width: 7%; height: auto; color: rbg(183,48,48);" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="./EDM&NCS.html">EDM & NCS</a></li>
+                <li><a href="./Anime.html">Anime</a></li>
+                <li><a href="./Game.html">Game</a></li>
+                <li><a href="./Support.html">Hỗ trợ</a></li>
+            </ul>
+        </div>            
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Hỗ trợ</h1>
+        </div>
+        <div class="text">
+            <h2>1. Câu hỏi thường gặp (FAQ – Frequently Asked Questions)</h2>
+            <ul style="padding-left: 50px;">
+                <li>Trang web của bạn có những gì?</li>
+                <li>Ngoài những bộ phim trên, còn những bộ nào khác hay hơn không?</li>
+                <li>Còn những con game khác hay hơn thì sao?</li>
+                <li>Bạn có thể cập nhật thêm hay không?</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h2>2. Trung tâm trợ giúp (Help Center / Support Center)</h2>
+            <ul style="padding-left: 50px;">
+                <li>Tài khoản & bảo mật</li>
+                <li>Thanh toán & hóa đơn</li>
+                <li>Cài đặt & cấu hình</li>
+                <li>Xử lý sự cố kỹ thuật</li>
+            </ul>
+
+        </div>
+        <div class="text">
+            <h2>3. Số hotline hoặc email hỗ trợ (Hotline or email)</h2>
+            <ul style="padding-left: 50px;">
+                <li>Hotline (chỉ hoạt động trong giờ hành chính): ...</li>
+                <li>Email: ...</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h2>4. Hỗ trợ qua mạng xã hội</h2>
+            <ul style="padding-left: 50px;">
+                <li>Facebook: ...</li>
+                <li>Twitter: ...</li>
+                <li>Zalo: ...</li>
+                <li>Instagram: ...</li>
+                <li>Tiktok: ...</li>
+                <li>Discord: ...</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h2>5. Cộng đồng người dùng</h2>
+            <ul style="padding-left: 50px;">
+                <li>Diễn đàn hỏi đáp</li>
+                <li>Nhóm Facebook / Telegram / Discord</li>
+                <li>Mục bình luận trong các bài viết support</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h2>6. Điều khoản sử dụng</h2>
+            <ul style="padding-left: 50px;">
+                <li>Cam kết thời gian phản hồi</li>
+                <li>Điều khoản bảo mật dữ liệu</li>
+                <li>Hướng dẫn tranh chấp, lỗi hệ thống</li>
+            </ul>
+        </div>
+        <div>
+            <button class="back-to-top" onclick="scrollToTop()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 14l6-6 6 6" stroke="rgb(183, 48, 48)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>  
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }  
+                window.onscroll = function () {
+                    const btn = document.querySelector(".back-to-top");
+                    if (document.documentElement.scrollTop > 300) {
+                        btn.style.display = "flex";
+                    } else {
+                        btn.style.display = "none";
+                    }
+                };
+            </script>               
+        </div>
+    </div>
+    <footer>
+        <div>Cảm ơn các bạn đã theo dõi.</div>
+        <div>Thanks for watching. 🤍</div>
+    </footer>
+</body>
+</html>

@@ -20,6 +20,9 @@ header i{
     position: relative;
     transition: all 0.75s;
 }
+.menu i{
+    margin-right: 20px;
+}
 header ul{
     visibility: hidden;
     opacity: 0;
@@ -75,6 +78,19 @@ header .menu ul li:hover a{
 }
 .text h2{
     color: rgb(205, 44, 58);
+    padding: 10px;
+}
+.text p{
+    padding: 10px;
+}
+.text p a{
+    color: rgb(183, 48, 48);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 10px;
+    text-decoration: none;
 }
 .text iframe{
     width: 400px;
