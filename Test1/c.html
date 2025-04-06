@@ -28,6 +28,29 @@
         <div class="content">
             
         </div>
+        <div>
+            <button class="back-to-top" onclick="scrollToTop()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 14l6-6 6 6" stroke="#d4aa00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>  
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }  
+                window.onscroll = function () {
+                    const btn = document.querySelector(".back-to-top");
+                    if (document.documentElement.scrollTop > 300) {
+                        btn.style.display = "flex";
+                    } else {
+                        btn.style.display = "none";
+                    }
+                };
+            </script>               
+        </div>
     </div>
     <footer>
         <div>Cảm ơn các bạn đã theo dõi.</div>
