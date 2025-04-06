@@ -60,11 +60,14 @@ header .menu ul li:hover a{
     color: white;
 }
 .text{
-    font-family: Pangea, sans-serif !important;    
     text-align: justify;
-    text-indent: 25px;
     font-size: 20px;
     line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 10px;
 }
 .text h2{
     color: rgb(205, 44, 58);
@@ -89,11 +92,13 @@ iframe{
     width: 700px;
     justify-content: space-between;
     display: block;
-    font-family: Pangea, sans-serif !important;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .content{
     line-height: 1.5;
-    text-indent: 25px;
     text-align: justify;
 }
 .img{
@@ -107,7 +112,6 @@ iframe{
 .img h2{
     padding: 10px;
     text-align: left;
-    text-indent: 25px;
     color: rgb(205, 44, 58);
 }
 .back-to-top {

@@ -6,7 +6,9 @@
     <title>Top game đang hot hiện nay</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -209,6 +211,29 @@
                 Như vậy, sau các tựa game hot nhất hiện nay mà bạn không nên bỏ lỡ. Mong bạn có thể lựa chọn được một tựa game giải trí phù hợp với bản thân khi nhàn rỗi.
             </div>
         </div>        
+        <div>
+            <button class="back-to-top" onclick="scrollToTop()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 14l6-6 6 6" stroke="#d4aa00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>  
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }  
+                window.onscroll = function () {
+                    const btn = document.querySelector(".back-to-top");
+                    if (document.documentElement.scrollTop > 300) {
+                        btn.style.display = "flex";
+                    } else {
+                        btn.style.display = "none";
+                    }
+                };
+            </script>               
+        </div>  
     </div>
     <footer>
         <div>Cảm ơn các bạn đã theo dõi.</div>
