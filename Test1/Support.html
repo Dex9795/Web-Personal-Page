@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img style="width: 7%; height: auto; color: rbg(183,48,48);" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
+    <header class="site-header">
+        <img style="width: 7%; height: auto; color: rbg(183,48,48);margin-left: 20px;" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
             <ul>
@@ -22,12 +22,28 @@
                 <li><a href="./Game.html">Game</a></li>
                 <li><a href="./Support.html">Hỗ trợ</a></li>
             </ul>
-        </div>            
+        </div>
+        <script>
+            let lastScrollY = window.scrollY;
+            const header = document.querySelector('.site-header');
+            window.addEventListener('scroll', () => {
+              const currentScrollY = window.scrollY;
+              if (currentScrollY > lastScrollY) {
+                // Cuộn xuống => ẩn header
+                header.style.top = '-100px';
+              } else {
+                // Cuộn lên => hiện header
+                header.style.top = '0';
+              }
+              lastScrollY = currentScrollY;
+            });
+        </script>             
     </header>
     <div class="container">
         <div class="content">
             <h1>Hỗ trợ</h1>
         </div>
+
         <div class="text">
             <h2>1. Câu hỏi thường gặp (FAQ – Frequently Asked Questions)</h2>
             <ul style="padding-left: 50px;">
@@ -37,6 +53,7 @@
                 <li>Bạn có thể cập nhật thêm hay không?</li>
             </ul>
         </div>
+
         <div class="text">
             <h2>2. Trung tâm trợ giúp (Help Center / Support Center)</h2>
             <ul style="padding-left: 50px;">
@@ -45,8 +62,8 @@
                 <li>Cài đặt & cấu hình</li>
                 <li>Xử lý sự cố kỹ thuật</li>
             </ul>
-
         </div>
+
         <div class="text">
             <h2>3. Số hotline hoặc email hỗ trợ (Hotline or email)</h2>
             <ul style="padding-left: 50px;">
@@ -54,6 +71,7 @@
                 <li>Email: ...</li>
             </ul>
         </div>
+
         <div class="text">
             <h2>4. Hỗ trợ qua mạng xã hội</h2>
             <ul style="padding-left: 50px;">
@@ -65,6 +83,7 @@
                 <li>Discord: ...</li>
             </ul>
         </div>
+
         <div class="text">
             <h2>5. Cộng đồng người dùng</h2>
             <ul style="padding-left: 50px;">
@@ -73,6 +92,7 @@
                 <li>Mục bình luận trong các bài viết support</li>
             </ul>
         </div>
+
         <div class="text">
             <h2>6. Điều khoản sử dụng</h2>
             <ul style="padding-left: 50px;">
@@ -81,6 +101,7 @@
                 <li>Hướng dẫn tranh chấp, lỗi hệ thống</li>
             </ul>
         </div>
+        
         <div>
             <button class="back-to-top" onclick="scrollToTop()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img style="width: 7%; height: auto; color: rbg(183,48,48);" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
+    <header class="site-header">
+        <img style="width: 7%; height: auto; color: rbg(183,48,48);margin-left: 20px;" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
             <ul>
@@ -22,7 +22,22 @@
                 <li><a href="./Game.html">Game</a></li>
                 <li><a href="./Support.html">Hỗ trợ</a></li>
             </ul>
-        </div>            
+        </div>  
+        <script>
+            let lastScrollY = window.scrollY;
+            const header = document.querySelector('.site-header');
+            window.addEventListener('scroll', () => {
+              const currentScrollY = window.scrollY;
+              if (currentScrollY > lastScrollY) {
+                // Cuộn xuống => ẩn header
+                header.style.top = '-100px';
+              } else {
+                // Cuộn lên => hiện header
+                header.style.top = '0';
+              }
+              lastScrollY = currentScrollY;
+            });
+        </script>           
     </header>
     <div class="container">
         <div class="content">
@@ -30,85 +45,186 @@
                 Một trong những bài hát hay nhất theo đánh giá cá nhân
             </h1>
             <div class="text">
-                Thưởng thức bản nhạc EDM mới này lấy cảm hứng từ nghệ sĩ EDM nổi tiếng. Cho dù bạn đang tìm kiếm Future Bass với những đoạn riff guitar đầy cảm xúc, Chillstep để thư giãn hay Tropical EDM cho những rung cảm mùa hè, chúng tôi đều có thể đáp ứng được nhu cầu của bạn!
+                <p>Thưởng thức bản nhạc mới đầy cảm hứng, lấy ý tưởng từ các nghệ sĩ nổi tiếng trong nhiều thể loại âm nhạc. Dù bạn đang tìm kiếm những giai điệu Future Bass với riff guitar đầy cảm xúc, Chillstep nhẹ nhàng để thư giãn tâm trí, Tropical EDM mang đến rung cảm mùa hè, hay thậm chí là những bản Pop bắt tai, Lo-fi dịu dàng, Indie đầy chất thơ, chúng tôi đều có thể đáp ứng. Từ âm thanh điện tử hiện đại đến âm nhạc mộc mạc và sâu lắng – ở đây, bạn luôn tìm thấy bản nhạc phù hợp với cảm xúc và khoảnh khắc của riêng mình.</p>
             </div>          
         </div> 
+
+        <div class="text">
+            <h2>1. EDM</h2>
+            <p>Nhạc điện tử (Electronic Dance Music - EDM) là một thể loại âm nhạc hiện đại được tạo ra bằng các thiết bị điện tử và phần mềm kỹ thuật số. EDM thường được biết đến với nhịp điệu mạnh mẽ, giai điệu bắt tai và những đoạn drop bùng nổ, khiến người nghe khó lòng đứng yên. Thể loại này không chỉ phổ biến trong các câu lạc bộ đêm hay lễ hội âm nhạc, mà còn len lỏi vào đời sống hàng ngày thông qua radio, quảng cáo, phim ảnh và mạng xã hội. Điểm đặc biệt của EDM là sự kết hợp giữa công nghệ và âm nhạc, tạo nên một thế giới âm thanh phong phú, đa sắc màu và đầy năng lượng.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/5RmWWq_6sv0" title="You WON&#39;T BELIEVE The POWER of Future Bass in Solo Leveling Season 2" frameborder="0" allow="accelerometer; autoplay = 1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=5RmWWq_6sv0">Xem thêm -></a></p>
-        </div>         
+            <p><a href="https://www.youtube.com/watch?v=5RmWWq_6sv0">Xem thêm -></a>
+        </div>
+
+        <div class="text">
+            <p>EDM không phải là một thể loại đơn lẻ, mà là một "vũ trụ" gồm nhiều nhánh nhỏ như house, techno, trance, dubstep, drum and bass, future bass, và nhiều thể loại phụ khác. Mỗi dòng nhạc có một cá tính riêng biệt: house thường nhẹ nhàng và dễ chịu, thích hợp cho những buổi tiệc ngoài trời; trong khi đó, dubstep lại nặng nề và dữ dội với những tiếng bass gằn rung chuyển cả cơ thể. Trance mang màu sắc mộng mị, thôi miên người nghe bằng những giai điệu kéo dài; còn drum and bass lại là một cuộc rượt đuổi đầy tốc độ giữa tiết tấu nhanh và âm thanh sôi động. Nhờ sự đa dạng ấy, EDM có thể phù hợp với mọi tâm trạng, hoàn cảnh và sở thích âm nhạc khác nhau.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/SB-6qnFOZv0" title="Music Mix 2024 🎧 EDM Remixes of Popular Songs 🎧 EDM Bass Boosted Music Mix #157" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://youtu.be/SB-6qnFOZv0">Xem thêm -></a></p>
-        </div>    
+            <p><a href="https://youtu.be/SB-6qnFOZv0">Xem thêm -></a> 
+        </div>   
+
+        <div class="text">
+            <p>Một trong những điểm hấp dẫn nhất của EDM chính là cộng đồng người yêu nhạc trên khắp thế giới. Các lễ hội EDM như Tomorrowland ở Bỉ, Ultra Music Festival ở Mỹ hay Creamfields ở Anh là những sự kiện âm nhạc quy mô toàn cầu, nơi hàng trăm nghìn người cùng tụ hội để hòa mình vào không khí cuồng nhiệt, ánh sáng rực rỡ và âm nhạc sôi động. Ở đó, âm nhạc không chỉ là âm thanh, mà là trải nghiệm cảm xúc, là sự kết nối giữa những con người xa lạ cùng chung một nhịp đập.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/IirZmdKTXGs" title="Top 30 Songs of TheFatRat 2024 - Best Of TheFatRat - TheFatRat Mega Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=IirZmdKTXGs">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=IirZmdKTXGs">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Ngoài ra, EDM còn là một trong những thể loại nhạc sáng tạo và linh hoạt nhất. Các DJ/producer như Martin Garrix, David Guetta, Calvin Harris, Skrillex, hay Zedd không chỉ đơn thuần chơi nhạc mà còn sáng tác, remix, và tạo nên những bản hit gây nghiện bằng cách sử dụng phần mềm như FL Studio, Ableton Live, hoặc Logic Pro. Những nghệ sĩ này đã làm thay đổi cách chúng ta nhìn nhận âm nhạc – từ một thứ gì đó chỉ được chơi bằng nhạc cụ truyền thống, thành một không gian số mà ở đó, mọi ý tưởng đều có thể thành hình.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/8whfLYpkSIU" title="Gaming Music 2024 | Best NoCopyrightSounds Mix  #anime #animecommunity #ncsmusic #fatrat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=8whfLYpkSIU">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=8whfLYpkSIU">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Cuối cùng, không thể phủ nhận rằng EDM đã ảnh hưởng sâu rộng đến văn hóa đại chúng. Các ca sĩ pop như Justin Bieber, Ariana Grande, hay The Weeknd đều đã hợp tác với các nhà sản xuất EDM để cho ra những bản nhạc đình đám toàn cầu. Điều này cho thấy rằng ranh giới giữa EDM và các dòng nhạc khác đang dần bị xóa nhòa, tạo nên một làn sóng âm nhạc mới – nơi cảm xúc, công nghệ và sáng tạo cùng hòa quyện để vẽ nên bức tranh âm nhạc hiện đại.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/4N57rYSthCk" title="Mashup of TheFatRat‘s songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=4N57rYSthCk">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=4N57rYSthCk">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Một điểm rất đáng yêu của EDM là khả năng truyền tải cảm xúc dù không cần lời hát. Khác với nhạc pop hay ballad – nơi ca từ thường là trung tâm của câu chuyện, thì EDM lại dùng chính âm thanh để kể chuyện. Một bản nhạc future bass nhẹ nhàng với giai điệu bay bổng có thể khiến người nghe như lạc vào không gian mộng mị, còn một bản progressive house lại có thể dẫn dắt cảm xúc từ bình lặng đến vỡ òa trong vòng vài phút. Những cú “drop” – điểm bùng nổ trong một bài nhạc EDM – đôi khi còn mang lại cảm xúc mạnh mẽ hơn bất kỳ ca từ nào. Đó là lý do vì sao nhiều người tìm đến EDM để giải tỏa, để “quẩy” hết mình, hoặc đơn giản là để được sống trong âm nhạc mà không cần phải giải thích gì thêm.</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/Z6Af-fXm3vk" title="Nightcore Top 30 Songs of TheFatRat 2024 - TheFatRat Mega Mix - Best of TheFatRat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=Z6Af-fXm3vk">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=Z6Af-fXm3vk">Xem thêm -></a> 
+        </div>
+        
+        <div class="text">
+            <p>Không giống như một thể loại đơn lẻ, EDM là một hệ sinh thái âm nhạc phong phú, bao gồm nhiều dòng nhánh khác nhau như house, techno, trance, dubstep, drum and bass, future bass… Mỗi dòng nhạc lại có một bản sắc riêng, từ những giai điệu nhẹ nhàng, thư giãn cho đến tiết tấu mạnh mẽ, bùng nổ. Chính sự đa dạng này khiến EDM có thể tiếp cận với nhiều nhóm khán giả khác nhau, từ người mới bắt đầu đến những tín đồ sành sỏi.</p>
         </div>
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/id2xX35mZqQ" title="Nightcore Top 30 Songs of TheFatRat 2025 - Best Of TheFatRat - TheFatRat Mega Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=id2xX35mZqQ">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=id2xX35mZqQ">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Nếu nói đến EDM mà không nhắc đến các lễ hội âm nhạc thì quả là thiếu sót. Những sự kiện như Tomorrowland, Ultra Music Festival hay Electric Daisy Carnival đã trở thành biểu tượng của nền văn hóa EDM toàn cầu. Tại đây, âm nhạc không chỉ là thứ để nghe – mà là trải nghiệm tổng thể với ánh sáng, sân khấu, công nghệ và cảm xúc. Hàng trăm nghìn người từ khắp nơi trên thế giới tụ họp lại, cùng hòa mình vào không khí cuồng nhiệt mà chỉ EDM mới mang lại được.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/bvx5KcuytJA" title="Top 30 Songs of TheFatRat 2025 - Best Of TheFatRat - TheFatRat Mega Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=bvx5KcuytJA">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=bvx5KcuytJA">Xem thêm -></a> 
         </div>
+    
+        <div class="text">
+            <p>Không cần đến những ca từ hoa mỹ, EDM vẫn có thể dẫn dắt người nghe qua nhiều cung bậc cảm xúc khác nhau. Chỉ với tiếng synth, bass và nhịp trống dồn dập, EDM có thể khiến người nghe vui vẻ, hưng phấn, thậm chí là lắng đọng, hoài niệm. Những bản nhạc như “Strobe” của deadmau5 hay “Opus” của Eric Prydz chính là minh chứng cho sức mạnh truyền cảm ấy – khi âm nhạc điện tử có thể kể chuyện mà không cần đến một lời nói nào.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/OO2i3knjWrk" title="Nightcore Top 50 Songs of TheFatRat 2025 - Best Of TheFatRat - TheFatRat Mega Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=OO2i3knjWrk">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=OO2i3knjWrk">Xem thêm -></a> 
         </div>
+    
+        <div class="text">
+            <p>Không phân biệt ngôn ngữ hay quốc tịch, EDM đã và đang trở thành cầu nối văn hóa giữa các quốc gia. Các DJ, producer từ châu Âu, Mỹ, châu Á cho đến Nam Mỹ đều có thể chia sẻ sản phẩm của mình lên các nền tảng toàn cầu như SoundCloud, Spotify, YouTube… Và khán giả, dù ở bất kỳ đâu, cũng có thể tiếp cận, thưởng thức và lan tỏa âm nhạc đến hàng triệu người khác. EDM là minh chứng rõ ràng nhất cho việc âm nhạc không có ranh giới.
+            </p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/9aHMQmFx83A" title="Nightcore Gaming Mix 2025 ♫ 1 Hour Nightcore Mix ♫ Best of EDM Mix 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=9aHMQmFx83A">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=9aHMQmFx83A">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <h2>2. NCS</h2>
+            <p>NoCopyrightSounds, hay gọi tắt là NCS, là một trong những tên tuổi đáng chú ý nhất trong cộng đồng nhạc điện tử hiện đại. Được thành lập vào năm 2011, NCS không chỉ là một kênh YouTube phát hành nhạc EDM, mà còn là một biểu tượng cho tinh thần tự do sáng tạo. Điểm đặc biệt của NCS là họ cho phép người dùng sử dụng âm nhạc của mình miễn phí trong các video cá nhân, miễn là ghi nguồn đầy đủ. Điều này đã khiến hàng triệu nhà sáng tạo nội dung yêu thích và lan truyền nhạc NCS khắp các nền tảng như YouTube, TikTok, Twitch, Facebook…</p>
+        </div>
+
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/K4DyBUG242c?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Cartoon, Jéja - On &amp; On (feat. Daniel Levi) | Electronic Pop | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=K4DyBUG242c&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=K4DyBUG242c&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Dù không phải hãng thu âm lớn, NCS đã giúp phát hiện và nâng tầm rất nhiều nghệ sĩ EDM trẻ tuổi. Những bản nhạc như “Spectre” của Alan Walker, “Invincible” của DEAF KEV hay “Sky High” của Elektronomia từng chỉ là sản phẩm của các producer vô danh, nhưng nhờ NCS, chúng đã trở thành những bản hit hàng trăm triệu lượt nghe. Với NCS, bạn không cần hợp đồng đắt đỏ – chỉ cần âm nhạc đủ chất, và bạn sẽ được lan tỏa đến toàn thế giới.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/3nQNiWdeH2Q?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Janji - Heroes Tonight (feat. Johnning) | Progressive House | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=2">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=2">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Nhạc NCS thường mang phong cách EDM trẻ trung, dễ nghe, dễ “dính” và thường tập trung vào những dòng như future bass, progressive house, melodic dubstep hoặc electro-pop. Nhịp điệu sôi động, giai điệu tươi sáng khiến nhạc NCS trở thành lựa chọn lý tưởng cho các video vlog, gaming, du lịch, hoặc livestream. Với âm thanh bắt tai và năng lượng tích cực, âm nhạc NCS dễ dàng chạm đến cảm xúc người nghe mà không cần ngôn ngữ phức tạp.
+            </p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/yJg-Y5byMMw?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Warriyo - Mortals (feat. Laura Brehm) | Future Trap | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=yJg-Y5byMMw&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=3">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=yJg-Y5byMMw&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=3">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Một trong những lý do khiến NCS phát triển nhanh chóng chính là nhờ cộng đồng sáng tạo nội dung. Các YouTuber, streamer, editor video… chính là những người mang nhạc NCS đến khắp mọi ngóc ngách trên internet. Mỗi khi bạn xem một video tutorial, vlog du lịch hay highlight trận game hấp dẫn – khả năng cao bạn đang nghe một bản nhạc của NCS mà không hề hay biết. Chính sự chia sẻ rộng rãi, tự nhiên này đã biến NCS thành “nhạc nền của Internet”.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/J2X5mJ3HDYE" title="DEAF KEV - Invincible | Glitch Hop | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=J2X5mJ3HDYE&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=4">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=J2X5mJ3HDYE&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=4">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Không giống như những hãng nhạc truyền thống, NCS mở ra cơ hội cho rất nhiều nghệ sĩ trẻ chưa có tên tuổi. Họ có thể gửi nhạc đến NCS và nếu bài được chọn, lập tức âm nhạc của họ có thể tiếp cận hàng triệu lượt nghe. Điều này không chỉ khuyến khích sáng tạo, mà còn xây dựng một thế hệ producer mới đầy nhiệt huyết. Nhiều người trong số họ sau này đã có được hợp đồng chuyên nghiệp, tour diễn, và chỗ đứng trong ngành công nghiệp âm nhạc toàn cầu.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/jK2aIUmmdP4?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Different Heaven &amp; EH!DE - My Heart | Drumstep | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=jK2aIUmmdP4&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=5">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=jK2aIUmmdP4&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=5">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Với hơn 35 triệu lượt đăng ký trên YouTube và hàng tỷ lượt nghe, NCS không còn là một kênh chia sẻ nhạc miễn phí – nó đã trở thành một thương hiệu toàn cầu. Logo đơn giản với nền đen trắng đặc trưng và dòng chữ "NCS" giờ đây đã trở nên quen thuộc với những ai thường xuyên theo dõi nội dung trên mạng. Với sự đầu tư ngày càng chuyên nghiệp, NCS đang từng bước tiến vào thế giới âm nhạc chính thống, nhưng vẫn giữ được bản chất "mở" vốn có.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/QglaLzo_aPk?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Julius Dreisig &amp; Zeus X Crona - Invisible | Trap | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=QglaLzo_aPk&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=12">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=QglaLzo_aPk&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=12">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Trong thời đại số, bản quyền là một rào cản lớn khiến nhiều người dùng mạng gặp khó khăn khi làm video. NCS giải quyết vấn đề đó bằng cách cung cấp âm nhạc có bản quyền rõ ràng nhưng vẫn free to use. Chỉ cần ghi nguồn đúng, bạn có thể sử dụng nhạc NCS thoải mái. Điều này không chỉ giúp lan tỏa âm nhạc dễ dàng hơn, mà còn giúp các nghệ sĩ nhận được sự công nhận đúng đắn thay vì bị xóa video hay "đánh gậy" bản quyền.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/LHvYrn3FAgI?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Unknown Brain - Superhero (feat. Chris Linton) | Trap | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=LHvYrn3FAgI&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=13">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=LHvYrn3FAgI&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=13">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Có thể bạn không nhận ra, nhưng NCS hiện diện rất nhiều trong cộng đồng game thủ. Các video highlight Liên Minh Huyền Thoại, CS:GO, PUBG, Minecraft… thường xuyên sử dụng nhạc NCS như một phần không thể thiếu để giữ nhịp và cảm xúc cho người xem. Với giai điệu nhanh, năng động và không gây xao nhãng, nhạc NCS là bạn đồng hành lý tưởng cho bất kỳ nội dung giải trí nào trên mạng.</p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/bdE_SyHad90?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Robin Hustin x TobiMorrow - Light It Up (feat. Jex) | Future Bounce | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=bdE_SyHad90&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=16">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=bdE_SyHad90&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=16">Xem thêm -></a> 
         </div>
+
+        <div class="text">
+            <p>Dù đã thành công rực rỡ, NCS vẫn không ngừng thay đổi để thích ứng với thời đại. Gần đây, họ bắt đầu ra mắt nhiều dòng nhạc mới, hợp tác với nghệ sĩ từ nhiều quốc gia, và cả phát hành trên các nền tảng phát trực tuyến như Spotify, Apple Music. Điều này cho thấy NCS đang mở rộng không chỉ về thể loại mà còn về mục tiêu – từ một kho nhạc miễn phí trở thành một nhãn hiệu âm nhạc toàn cầu, nơi mọi người đều có cơ hội được lắng nghe.
+
+            </p>
+        </div>
+    
         <div class="if">
             <iframe width="90%" height="400" src="https://www.youtube.com/embed/6FNHe3kf8_s?list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj" title="Different Heaven - Nekozilla | Electro | NCS - Copyright Free Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=6FNHe3kf8_s&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=19">Xem thêm -></a></p>
+            <p><a href="https://www.youtube.com/watch?v=6FNHe3kf8_s&list=PLRBp0Fe2Gpgn8Y9qI-p0aTxVtw8onBSFj&index=19">Xem thêm -></a> 
         </div>
+
         <div>
             <button class="back-to-top" onclick="scrollToTop()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img style="width: 7%; height: auto; color: rbg(183,48,48);" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
+    <header class="site-header">
+        <img style="width: 7%; height: auto; color: rbg(183,48,48);margin-left: 20px;" src="./Logo-Entertainment.png" alt="Logo Entertaiment">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
             <ul>
@@ -22,7 +22,22 @@
                 <li><a href="./Game.html">Game</a></li>
                 <li><a href="./Support.html">Hỗ trợ</a></li>
             </ul>
-        </div>            
+        </div>  
+        <script>
+            let lastScrollY = window.scrollY;
+            const header = document.querySelector('.site-header');
+            window.addEventListener('scroll', () => {
+              const currentScrollY = window.scrollY;
+              if (currentScrollY > lastScrollY) {
+                // Cuộn xuống => ẩn header
+                header.style.top = '-100px';
+              } else {
+                // Cuộn lên => hiện header
+                header.style.top = '0';
+              }
+              lastScrollY = currentScrollY;
+            });
+        </script>           
     </header>
     <div class="container">
         <div class="content">
@@ -31,11 +46,11 @@
             </h1>
             <div class="text">
                 <p>Khám phá và trải nghiệm những bộ anime hay, ý nghĩa được cả cộng đồng người xem anime trên toàn thế giới yêu thích và đánh giá cao.</p>
-            </div>
-            
+            </div>           
         </div>
+
         <div class="img">
-            <h2>Pháp Sư Tiễn Táng - Sousou no Frieren ( 2023 )</h2>
+            <h2>1. Pháp Sư Tiễn Táng - Sousou no Frieren ( 2023 )</h2>
             <img src="https://img-zlr1.tv360.vn/image1/2023/11/06/23/43f64be6/43f64be6-59b5-4292-8466-45e9e2f116d8_640_360.jpg" alt="Pháp Sư Tiễn Táng - Sousou no Frieren ( 2023 )">
             <div class="text">
                 Cuộc chiến chống lại Ma Vương đã khép lại, mang đến hòa bình cho vùng đất. Nhưng hành trình của Frieren, nàng elf pháp sư tài năng, vẫn đang tiếp diễn. Khác với những đồng đội dũng cảm, Frieren sở hữu tuổi thọ vượt xa người thường.
@@ -44,8 +59,9 @@
                 Nhiều thập kỷ sau chiến thắng vang dội, việc tiễn đưa một người bạn cũ về cõi vĩnh hằng khiến Frieren đối mặt với sự bất tử gần như vô tận của mình. Quyết định thực hiện di nguyện cuối cùng của đồng đội, Frieren bước vào một cuộc phiêu lưu mới, hứa hẹn nhiều điều thú vị và ý nghĩa.
             </div>
         </div>
+
         <div class="img">
-            <h2>Đại Chiến Titan - Attack On Titans ( 2013 )</h2>
+            <h2>2. Đại Chiến Titan - Attack On Titans ( 2013 )</h2>
             <img src="https://thanhnien.mediacdn.vn/Uploaded/game/st.game.thanhnien.vn/image/GO/TG/ti-tan-dai-chien-dong-cua-mat-roi-04.jpg" alt="Đại Chiến Titan - Attack On Titans ( 2013 )">
             <div class="text">
                 Không thua kém các bộ phim anime khác, Attack on Titans ( Shingeki no Kyojin ) cũng được xếp vào hàng những tác phẩm hay nhất mọi thời đại khi nhận được sự chú ý bởi cốt truyện kịch tính và mang ý thông điệp nghĩa sâu sắc.
@@ -57,8 +73,9 @@
                 Bằng hình ảnh đồ họa tuyệt vời cùng những chuyển động mượt mà đã giúp Attack on Titans trở thành bộ phim ăn khách ở Nhật. Sau thành công vang dội của phần 1 tác giả đã cho ra mắt tiếp tục phần mới trước sự háo hức của người xem.
             </div>
         </div>
+
         <div class="img">
-            <h2>Hunter X Hunter – Thợ Săn Tí Hon (2003)</h2>
+            <h2>3. Hunter X Hunter – Thợ Săn Tí Hon (2003)</h2>
             <img src="https://cdn.voh.com.vn/voh/Image/2022/09/16/phim-anime-hay-16.jpg?t=o" alt="Hunter X Hunter – Thợ Săn Tí Hon (2003)">
             <div class="text">
                 Vốn được mệnh danh là bộ anime “không hồi kết” vì tác giả mãi bận chơi game mà không chịu ra chương mới. Tuy nhiên, chặng đường đã đi của Hunter x Hunter vẫn vô cùng thú vị với nội dung đỉnh cao - bằng chứng là sau nhiều năm đến thế, khán giả vẫn mong chờ bộ anime được tiếp nối.
@@ -67,15 +84,17 @@
                 Câu chuyện của Hunter x Hunter xoay quanh hành trình tìm cha của cậu bé Gon. Dù còn khá nhỏ tuổi nhưng cậu bé đã có tư chất trở thành thợ săn - nghề nghiệp danh giá hàng đầu trong thế giới này. Vì bố Gon cũng là một Hunter nên cậu bé quyết tâm lên đường tham gia cuộc thi tuyển chọn ấy. Tại cuộc thi, Gon đã quen được nhiều người bạn mới - những người sẽ đồng hành cùng cậu trên hành trình dài phía trước. 
             </div>
         </div>
+
         <div class="img">
-            <h2>Sứ Mạng Thần Chết - Bleach ( 2004 )</h2>
+            <h2>4. Sứ Mạng Thần Chết - Bleach ( 2004 )</h2>
             <img src="https://cdn.voh.com.vn/voh/Image/2018/12/23/2018111219322_20181223222647.jpg?t=o" alt="Sứ Mạng Thần Chết - Bleach ( 2004 )">
             <div class="text">
                 Bleach kể về Ichigo Kurosaki là một thiếu niên hung hăng, hay gây rắc rối và cậu có được một năng lực đặc biệt là có thể nhìn thấy linh hồn. Câu chuyện bắt đầu với sự xuất hiện bất ngờ của một người lạ ngay trong phòng ngủ của Ichigo. Người lạ mặt này chính là Shinigami (thần chết) Rukia Kuchiki, cô vô cùng ngạc nhiên trước việc Ichigo có thể nhìn thấy mình. Trong lúc cả hai đang trò chuyện thì bỗng nhiên có một ác ma tấn công vào nhà của Ichigo.
             </div>
         </div>
+
         <div class="img">
-            <h2>Dược Sư Tự Sự: Từ tiệm thuốc nhỏ đến cung điện nguy nga</h2>
+            <h2>5. Dược Sư Tự Sự: Từ tiệm thuốc nhỏ đến cung điện nguy nga</h2>
             <img src="https://static.lag.vn/upload/news/23/10/31/anime-duoc-su-tu-su-gay-tranh-cai-vi-chiem-doat-van-hoa-1_ZFHA.jpg?w=800&encoder=wic&subsampling=444" alt="Dược Sư Tự Sự: Từ tiệm thuốc nhỏ đến cung điện nguy nga">
             <div class="text">
                 Maomao từng có cuộc sống yên bình bên người cha – một thầy thuốc giỏi. Nhưng mọi chuyện đảo chiều khi cô bị bắt cóc và bán làm người hầu hạ thấp hèn trong cung điện nguy nga. Cuộc sống cung đình đầy quy tắc và sự giả tạo không phù hợp với tính cách độc lập của Maomao.
@@ -87,8 +106,10 @@
                 Câu chuyện "Dược Sư Tự Sự" hứa hẹn mang đến những tình tiết hấp dẫn về hành trình vươn lên của Maomao, từ một cô gái tiệm thuốc bình thường trở thành thầy thuốc tài ba của hoàng cung. Bên cạnh đó, bộ phim còn khai thác những mối quan hệ thú vị giữa Maomao với các nhân vật khác, đặc biệt là Jinshi.
                 Hãy cùng khám phá xem Maomao sẽ vượt qua những thử thách nào và sử dụng tài năng của mình để tạo nên những điều phi thường trong chốn cung đình!
             </div>       
-        </div><div class="img">
-            <h2>Jujutsu Kaisen - Chú Thuật Hồi Chiến (2020)</h2>
+        </div>
+        
+        <div class="img">
+            <h2>6. Jujutsu Kaisen - Chú Thuật Hồi Chiến (2020)</h2>
             <img src="https://th.bing.com/th/id/OIP.FjYk0ECB5t9_4QIUGFedDQHaEK?rs=1&pid=ImgDetMain" alt="Jujutsu Kaisen - Chú Thuật Hồi Chiến (2020)">
             <div class="text">
                 Đây có thể được xem là một trong những bộ anime hay ra mắt gần và hot nhất ở thời điểm hiện tại. Nhiều fan hâm mộ đánh giá đây là phiên bản khác của Naruto với những hình ảnh kết ấn vô cùng quen thuộc. 
@@ -97,9 +118,10 @@
                 Nội dung Jujutsu Kaisen xoay quanh Itadori Yuuji, cậu học sinh trung học không có gì ngoài sức mạnh thể lực tuyệt vời. Trước khi ông của cậu mất, ông đã giúp cho Yuuji nhận ra được ý nghĩa thật sự trong cuộc sống đã không còn bất cứ người thân nào. Tuy nhiên, trong một tình huống trớ trêu, bất đắc dĩ Yuuji đã nuốt ngón tay của Sukuna - vua của các lời nguyền với sức mạnh hủy diệt kinh khủng. Từ đó, cậu trở thành vật chứa của Sukuna chờ đợi thu thập đủ các ngón tay để chịu án tử nhằm tiêu diệt vua của các lời nguyền. Yuuji theo học tại trường chú thuật, quyết tâm trở nên ngày càng mạnh mẽ hơn để bảo vệ những người bạn mới, bảo vệ con người trước các lời nguyền độc ác. 
             </div>
         </div>
+
         <div class="img">
-            <h2>Koe no Katachi - Dáng hình thanh âm: Lời xin lỗi muộn màng và hành trình chữa lành ( 2016 )</h2>
-            <img style="height: 600px;" src="https://upload.wikimedia.org/wikipedia/vi/thumb/c/c6/Koe_no_Katachi_Film_Poster.jpg/250px-Koe_no_Katachi_Film_Poster.jpg" alt="Koe no Katachi - Dáng hình thanh âm: Lời xin lỗi muộn màng và hành trình chữa lành ( 2016 )">
+            <h2>7. Koe no Katachi - Dáng hình thanh âm: Lời xin lỗi muộn màng và hành trình chữa lành ( 2016 )</h2>
+            <img style="height: 600px;" src="https://gocnhoannie.com/wp-content/uploads/2019/07/dang-hinh-thanh-am.jpeg" alt="Koe no Katachi - Dáng hình thanh âm: Lời xin lỗi muộn màng và hành trình chữa lành ( 2016 )">
             <div class="text">
                 Koe no Katachi (A Silent Voice) là một bộ phim hoạt hình lấy đề tài học đường, xoay quanh câu chuyện của hai nhân vật chính: Ishida Shouya và Nishimiya Shouko. Shouya, một học sinh cá biệt, bắt đầu hành trình học trung học của mình với những trò nghịch ngợm. Mục tiêu của cậu lần này là Shouko Nishimiya, một bạn học mới bị khiếm thính. Những trò đùa ác ý của Shouya ngày càng leo thang, dẫn đến việc Shouko phải chuyển trường.
             </div>
@@ -110,8 +132,9 @@
                 Koe no Katachi không chỉ mang đến câu chuyện xúc động về sự hối cải, tha thứ mà còn khắc họa chân thực những vấn đề nhức nhối của học đường như bạo lực học đường, sự thờ ơ và những khó khăn mà người khuyết tật gặp phải trong cuộc sống.
             </div>
         </div>
+
         <div class="img">
-            <h2>One Piece - Đảo Hải Tặc ( 1999 )</h2>
+            <h2>9. One Piece - Đảo Hải Tặc ( 1999 )</h2>
             <img src="https://images.fbox.fpt.vn/wordpress-blog/2023/08/dao-hai-tac.jpg" alt="One Piece - Đảo Hải Tặc ( 1999 )">
             <div class="text">
                 One Piece là bộ phim anime được chuyển thể từ bộ manga cùng tên gắn liền với tuổi thơ và ký ức của nhiều người. Phim vẫn đều đặn được phát hành từ năm 1997 đến này và thậm chí nhiều người còn được coi là trưởng thành cùng với tác phẩm. Phim nói về cuộc hành trình của Monkey D. Luffy, thuyền trưởng của băng hải tặc Mũ Rơm, cùng các đồng đội của cậu.
@@ -120,8 +143,9 @@
                 Nếu ai đã và đang theo dõi bộ truyện tranh cũng như anime về One Piece thì chắc chắn có thể cảm nhận được sức nóng lan tỏa trên toàn thế giới của chúng với nhiều tình tiết hấp dẫn, kịch tính. Bên cạnh những khoảnh khắc hài hước, thú vị tạo tiếng cười cho người xem, phim còn để lại ấn tượng với những bài học ý nghĩa về tình bạn, sự đoàn kết, ý nghĩa của một gia đình và đặc biệt là những con người luôn nuôi dưỡng, chinh phục ước mơ. Qua nhiều năm, One Piece vẫn được xem là một trong bộ hoạt hình anime hay nhất Nhật Bản, gắn liền với bao thế hệ.
             </div>
         </div>
+
         <div class="img">
-            <h2>Boku no Kokoro no Yabai Yatsu: Tình yêu vụng về và những bí mật thầm kín</h2>
+            <h2>10. Boku no Kokoro no Yabai Yatsu: Tình yêu vụng về và những bí mật thầm kín</h2>
             <img src="https://image.lag.vn/upload/news/23/06/16/anime-Boku-No-Kokoro-No-Yabai-Yatsu-season-2-dang-duoc-san-xuat-2_CPWL.jpg" alt="Boku no Kokoro no Yabai Yatsu: Tình yêu vụng về và những bí mật thầm kín">
             <div class="text">
                 Boku no Kokoro no Yabai Yatsu, hay còn gọi là BokuYaba, là một bộ manga và anime hài lãng mạn kể về câu chuyện tình yêu của hai học sinh trung học: Ichikawa Kyoutarou và Yamada Anna.
@@ -129,8 +153,10 @@
             <div class="text">
                 Boku no Kokoro no Yabai Yatsu xoay quanh những tình huống hài hước, dễ thương khi Kyoutarou cố gắng che giấu những suy nghĩ "biến thái" của mình về Anna và những nỗ lực vụng về của anh chàng để chinh phục trái tim cô. Bộ phim cũng khai thác những bí mật thầm kín của các nhân vật, dần dần hé lộ những góc khuất trong tâm hồn của họ.
             </div>
-        </div><div class="img">
-            <h2>Mob Psycho 100: Siêu năng lực tiềm ẩn và cậu bé "vô cảm" ( 2016 )</h2>
+        </div>
+        
+        <div class="img">
+            <h2>11. Mob Psycho 100: Siêu năng lực tiềm ẩn và cậu bé "vô cảm" ( 2016 )</h2>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLh6Bujjl2TkJHAhPcL5a6pFnRvI344ihw9w&s" alt="Mob Psycho 100: Siêu năng lực tiềm ẩn và cậu bé 'vô cảm' ( 2016 )">
             <div class="text">
                 Mặc dù sở hữu năng lực đáng gờm, Mob lại là một cậu bé có vẻ ngoài bình thường và thường được gọi với biệt danh "Mob" (từ lóng mang nghĩa "vô cảm", "nhạt nhẽo"). Cậu luôn cố gắng kìm nén cảm xúc để duy trì cuộc sống bình thường. Thế nhưng, việc kìm nén này cũng tiềm ẩn những nguy cơ, đẩy cảm xúc của Mob đến giới hạn.
@@ -139,67 +165,72 @@
                 Mob Psycho 100 hứa hẹn sẽ mang đến những pha hành động mãn nhãn với những màn chiến đấu sử dụng năng lực siêu nhiên. Bên cạnh đó, bộ phim còn khai thác nội tâm phức tạp của Mob, hành trình kiểm soát cảm xúc và khám phá sức mạnh tiềm ẩn của bản thân.
             </div>
         </div>
+
         <div class="img">
-            <h2>Demon Slayer – Thanh Gươm Diệt Quỷ (2019)</h2>
+            <h2>12. Demon Slayer – Thanh Gươm Diệt Quỷ (2019)</h2>
             <img src="https://pic8.iqiyipic.com/image/20240611/ac/33/a_100449112_m_601_en_m1_1013_569.jpg" alt="Demon Slayer – Thanh Gươm Diệt Quỷ (2019)">
             <div class="text">
                 Bạn đang muốn thưởng thức một tựa anime vừa khai thác các yếu tố hành động mãn nhãn, hài hước và giàu cảm xúc, Demon Slayer: Kimetsu no Yaiba chính là một cái tên chẳng thể bỏ qua. Chuyển thể từ tựa manga ăn khách của tác giả Koyoharu Gotouge, bộ truyện tranh này đã đi đến hồi kết và nhận được sự ủng hộ nhiệt tình của các fan otaku.
             </div>
         </div>
+
         <div class="img">
-            <h2>Modao Zushi - Ma Đạo Tổ Sư: Trùng sinh, trả thù và những ân oán giang hồ</h2>
+            <h2>13. Modao Zushi - Ma Đạo Tổ Sư: Trùng sinh, trả thù và những ân oán giang hồ</h2>
             <img src="https://image.voh.com.vn/voh/image/2024/06/26/ma-dao-to-su-095054.jpg?t=o&w=1600&q=85" alt="Modao Zushi - Ma Đạo Tổ Sư: Trùng sinh, trả thù và những ân oán giang hồ">
             <div class="text">
                 Modao Zushi (Ma Đạo Tổ Sư) là một bộ phim hoạt hình (donghua) Trung Quốc ăn khách, được chuyển thể từ tiểu thuyết cùng tên của tác giả Mặc Hương Đồng Khứu. Câu chuyện lấy bối cảnh thế giới tu tiên, nơi các gia tộc tu luyện pháp thuật sinh sống.
             </div>
             <div class="text">
                 Trong quá khứ, Ôn thị, một trong những gia tộc hùng mạnh nhất, đã gây ra nhiều tội ác và gieo rắc khổ đau cho các gia tộc khác. Để chống lại Ôn thị, các gia tộc tu chân đã liên minh và phát động chiến dịch Sunshot.
-
                 Wei Wuxian, được mệnh danh là Di Lăng Lão Tổ (Yiling Lão Tổ), đã có những đóng góp quan trọng trong việc lật đổ Ôn thị. Tuy nhiên, vì sức mạnh tà thuật của mình quá lớn, Wei Wuxian bị chính những người từng sát cánh coi là mối nguy hiểm và bị hàng vạn người truy đuổi.
-                
                 Mười ba năm sau, thi thể của Wei Wuxian được dùng làm vật tế cho một nghi thức kỳ bí và được hồi sinh. Hắn gặp lại những người quen cũ như Lam Vong Cơ thuộc Cô Tô Lam thị và Giang Trừng của Vân Mộng Giang thị.
-                
                 Quá khứ bí ẩn của Wei Wuxian cùng những mâu thuẫn trong giới tu chân một lần nữa được phơi bày. Tất cả bắt nguồn từ những ân oán từ thời niên thiếu của họ.
             </div>
         </div>
+
         <div class="img">
-            <h2>Mushishi - Trùng Sư: Kiếm tìm sự cân bằng giữa thế giới loài người và Mushi bí ẩn</h2>
+            <h2>14. Mushishi - Trùng Sư: Kiếm tìm sự cân bằng giữa thế giới loài người và Mushi bí ẩn</h2>
             <img style="height: 600px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLB0Tl_gO8RQhsBpgUG2VtLCt260VrPR8HZA&s" alt="Mushishi - Trùng Sư: Kiếm tìm sự cân bằng giữa thế giới loài người và Mushi bí ẩn">
             <div class="text">
                 Mushishi là bộ anime giả tưởng lấy bối cảnh Nhật Bản thời xưa, nơi tồn tại những sinh vật kì lạ được gọi là Mushi. Không phải yêu quái hay ác quỷ, Mushi là những dạng sống nguyên thủy, tồn tại song song với con người từ thuở sơ khai. Chúng vừa có thể đẹp đẽ, vừa có thể quái dị, gây ra những hiện tượng khó hiểu cho con người. Thông qua những câu chuyện này, bộ phim khai thác mối quan hệ giữa con người và thế giới tự nhiên, đặt ra những câu hỏi về sự cân bằng giữa hai thế giới.
             </div>
         </div>
+
         <div class="img">
-            <h2>Spirited Away - Sen và Chihiro ở thế giới thần bí: Chuyến phiêu lưu kỳ diệu của Chihiro vào thế giới thần linh</h2>
+            <h2>15. Spirited Away - Sen và Chihiro ở thế giới thần bí: Chuyến phiêu lưu kỳ diệu của Chihiro vào thế giới thần linh</h2>
             <img src="https://images.fbox.fpt.vn/wordpress-blog/2023/10/sen-ta-vung-dat-linh-hon.jpg" alt="Spirited Away - Sen và Chihiro ở thế giới thần bí: Chuyến phiêu lưu kỳ diệu của Chihiro vào thế giới thần linh">
             <div class="text">
                 en và Chihiro ở thế giới thần bí là bộ phim hoạt hình huyền ảo của đạo diễn Hayao Miyazaki, đưa người xem đến với câu chuyện về cô bé Chihiro Ogino, 10 tuổi. Trên đường chuyển đến nhà mới, Chihiro và bố mẹ tình cờ lạc vào một công viên giải trí bỏ hoang. Với lòng dũng cảm, sự thông minh và những người bạn mới gặp gỡ, Chihiro dấn thân vào hành trình giải lời nguyền cho bố mẹ và tìm đường trở về thế giới loài người.
             </div>
         </div>
+
         <div class="img">
-            <h2>Natsume Yujinchou: Hữu Nhân Sổ - Câu chuyện về chàng trai nhìn thấy yêu quái và hành trình giải phóng họ</h2>
+            <h2>16. Natsume Yujinchou: Hữu Nhân Sổ - Câu chuyện về chàng trai nhìn thấy yêu quái và hành trình giải phóng họ</h2>
             <img src="https://i.ytimg.com/vi/Rm1TomFGbeo/maxresdefault.jpg" alt="Natsume Yujinchou: Hữu Nhân Sổ - Câu chuyện về chàng trai nhìn thấy yêu quái và hành trình giải phóng họ">
             <div class="text">
                 Natsume Yujinchou, hay còn gọi là Hữu Nhân Sổ, là một bộ anime truyền hình dài tập chuyển thể từ manga cùng tên của tác giả Yuki Midorikawa. Phim được sản xuất bởi studio Brain's Base và Shuka, với bốn mùa đầu tiên do Takahiro Omori đạo diễn. Natsume Takashi, từ nhỏ đã có khả năng nhìn thấy yêu quái, điều khiến cậu bị xa lánh và cô đơn. Khi bà nội qua đời, Natsume thừa kế "Hữu Nhân Sổ", cuốn sổ ghi chép tên của hàng trăm yêu quái mà bà đã thu phục và bắt buộc phải phục tùng. Natsume quyết định trả lại tên cho các yêu quái để giải phóng họ khỏi ràng buộc và tìm kiếm sự tự do. Trên hành trình này, cậu gặp gỡ nhiều yêu quái khác nhau, mỗi con mang một câu chuyện riêng, và dần dần học được cách trân trọng tình bạn, lòng tốt và sự đồng cảm.
             </div>
         </div>
+
         <div class="img">
-            <h2>Lâu đài bay của Pháp sư Howl: Hành trình hóa giải lời nguyền và khám phá thế giới phép thuật</h2>
+            <h2>17. Lâu đài bay của Pháp sư Howl: Hành trình hóa giải lời nguyền và khám phá thế giới phép thuật</h2>
             <img src="https://cdn2.tuoitre.vn/zoom/700_390/471584752817336320/2024/9/5/howlmain-17255015479782001398958-0-0-424-810-crop-1725501990037733354148.jpg" alt="Lâu đài bay của Pháp sư Howl: Hành trình hóa giải lời nguyền và khám phá thế giới phép thuật">
             <div class="text">
                 Sophie, một cô gái trẻ lặng lẽ làm việc tại cửa hàng bán mũ, bỗng chốc thấy cuộc sống bị xáo trộn hoàn toàn khi bị một pháp sư điển trai nhưng bí ẩn tên Howl "bắt cóc" theo đúng nghĩa đen. Mụ phù thủy Vùng Hoang tàn nhẫn và kiêu căng, đố kỵ tình bạn của họ, đã nguyền rủa Sophie.
-
                 Bắt đầu cho một cuộc phiêu lưu thay đổi cuộc đời, Sophie đặt chân lên Lâu đài bay tuyệt đẹp của Howl, bước vào thế giới phép thuật kỳ diệu để tìm cách hóa giải lời nguyền.
             </div>
         </div>
+
         <div class="img">
-            <h2>Spy x Family - Gia Đình Sát Thủ (2022)</h2>
+            <h2>18. Spy x Family - Gia Đình Sát Thủ (2022)</h2>
             <img src="https://st.gamevui.vn/images/image/2022/04/21/SpyxFamilyuptop-1.jpg" alt="Spy x Family - Gia Đình Sát Thủ (2022)">
             <div class="text">
                 Vốn được chuyển thể từ một bộ manga ăn khách, Spy x Family được kỳ vọng khá nhiều khi chuyển thể thành anime và lên sóng vào năm 2022. Kết quả, người hâm mộ không bỏ công chờ đợi khi bộ phim cực kỳ thành công, thậm chí nổi tiếng hơn cả bản manga.
             </div>
-        </div><div class="img">
-            <h2>Mononoke Hime: Công chúa Mononoke - Bài ca về sự cân bằng giữa con người và thiên nhiên</h2>
+        </div>
+        
+        <div class="img">
+            <h2>19. Mononoke Hime: Công chúa Mononoke - Bài ca về sự cân bằng giữa con người và thiên nhiên</h2>
             <img src="https://i.pinimg.com/736x/22/ff/69/22ff69abee66e8e95425a758e3540549.jpg" alt="Mononoke Hime: Công chúa Mononoke - Bài ca về sự cân bằng giữa con người và thiên nhiên">
             <div class="text">
                 Iron Town - Thị trấn Sắt Thép là một pháo đài dưới sự lãnh đạo của Eboshi. Bằng cách tàn phá những cánh rừng xung quanh, Iron Town sản xuất một lượng lớn cát sắt, được sử dụng để chế tạo thuốc súng và các loại máy móc khác. Tuy nhiên, do việc tàn phá rừng, các bộ tộc động vật lân cận do San, một cô gái người sói dẫn đầu, nổi dậy trả thù.
@@ -208,8 +239,9 @@
                 Khi đến Iron Town, Ashitaka chứng kiến cảnh tượng chiến tranh khốc liệt. Sửng sốt và bàng hoàng, chàng cố gắng tạo ra hòa bình và kết bạn với tộc Sói. Song song với việc rừng bị tàn phá và cuộc chiến tranh dai dẳng giữa loài người và thú vật, liệu Thần Rừng có rộng lòng tha thứ và chấp nhận lời cầu xin hóa giải lời nguyền của Ashitaka?
             </div>
         </div>
+
         <div class="img">
-            <h2>Mộ Đom Đóm - Grave Of The Fireflies ( 1988 )</h2>
+            <h2>20. Mộ Đom Đóm - Grave Of The Fireflies ( 1988 )</h2>
             <img src="https://openedu.vn/files/assets/01c43994-a286-4704-b1b5-b9e33050f64f.webp?fit=inside&width=800&height=600&quality=90&format=webp" alt="Mộ Đom Đóm - Grave Of The Fireflies ( 1988 )">
             <div class="text">
                 Có tuổi đời khá lớn so với các anime khác, cho đến nay Mộ đom đóm vẫn luôn được xem là một tác phẩm anime kinh điển trong lòng người hâm mộ. Dù là một bộ phim với nội dung khô khan về thời chiến tranh nhưng Mộ đom đóm vẫn lấy đi nước mắt của hàng triệu khán giả. Nếu bạn đã xem phim chắc chắn bạn sẽ cảm thấy nhói lòng và cay mắt trước hình ảnh hoang tàn, đổ nát do chiến tranh gây ra cùng với sự nghèo khổ, đói nát mà con người phải chịu đựng.
@@ -218,77 +250,91 @@
                 Phim sở hữu gam màu xanh xám có phần u tối và chủ yếu chỉ nhờ vào ánh sáng rực rỡ của những chú đom đóm. Đây cũng là hình ảnh biểu tượng nổi bật nhất phim, cuộc sống ngắn ngủi của đom đóm cũng là một ẩn dụ về số phận mong manh của người dân Nhật Bản vào thời điểm đó.
             </div>
         </div>
+
         <div class="img">
-            <h2>Seven Deadly Sins - Thất Hình Đại Tội (2014)</h2>
+            <h2>21. Seven Deadly Sins - Thất Hình Đại Tội (2014)</h2>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRUpGm-gBRmQBURWbZv0PPGC_84OwV_rP8A&s" alt="Seven Deadly Sins - Thất Hình Đại Tội (2014)">
             <div class="text">
                 Thất Hình Đại Tội là một trong những bộ anime hành động, phép thuật kinh điển nhất định phải xem thử một lần. Được xây dựng dựa theo hình tượng 7 tội lỗi trong kinh thánh, các nhân vật chính sở hữu những sức mạnh riêng khiến khán giả vô cùng thích thú.
             </div>
         </div>
+
         <div class="img">
-            <h2>One Punch Man – Cú Đấm Hủy Diệt (2015)</h2>
+            <h2>22. One Punch Man – Cú Đấm Hủy Diệt (2015)</h2>
             <img src="https://kimlongcenter.com/upload/news/one-punch-man-world-tua-game-cu-dam-huy-diet-danh-cho-mobile-va-pc-sap-duoc-ra-mat-.jpg" alt="One Punch Man – Cú Đấm Hủy Diệt (2015)">
             <div class="text">
                 Anh chàng đầu trọc cùng với cú đấm hủy diệt đã trở nên quá quen thuộc đối với khán giả mê phim hoạt hình. Bộ anime này nổi tiếng với nhân vật chính sinh ra ở vạch đích sức mạnh thay vì motif rèn luyện bản thân theo thời gian quen thuộc. Thế giới của One Punch Man thường bị tấn công bởi quái vật được chia thành nhiều cấp độ khác nhau. Để đối phó với chúng, Hiệp hội siêu anh hùng được thành lập. Còn Saitama - nhân vật chính của chúng ta lại “out trình” tất cả với cú đấm có thể hủy diệt mọi con quái vật dù có mạnh đến đâu đi nữa. 
             </div>
-        </div><div class="img">
-            <h2>Assassination Classroom - Lớp Học Sát Thủ (2015)</h2>
+        </div>
+        
+        <div class="img">
+            <h2>23. Assassination Classroom - Lớp Học Sát Thủ (2015)</h2>
             <img src="https://pic2.iqiyipic.com/image/20211112/39/53/a_100484214_m_601_en_m1_1080_608.jpg" alt="Assassination Classroom - Lớp Học Sát Thủ (2015)">
             <div class="text">
                 Bạn đang tìm kiếm một bộ anime hay có cốt truyện mới lạ có "một không hai" và đặc biệt là đã ra “trọn bộ” để cày cuối tuần này? Hãy xem ngay Lớp Học Sát Thủ nhé, bạn sẽ không thất vọng đâu.
             </div>
         </div>
+
         <div class="img">
-            <h2>My Hero Academia – Học Viện Anh Hùng (2016)</h2>
+            <h2>24. My Hero Academia – Học Viện Anh Hùng (2016)</h2>
             <img src="https://images.spiderum.com/sp-images/1df638d0542a11efb1160fc565c10e04.jpeg" alt="My Hero Academia – Học Viện Anh Hùng (2016)">
             <div class="text">
                 My Hero Academia chắc chắn là một bộ anime không thể bỏ qua với những ai yêu thích thể loại siêu anh hùng. Mỗi nhân vật đều mang năng lực đặc biệt khác nhau, cùng chiến đấu chống lại những kẻ phản diện tà ác.
             </div>
         </div>
+
         <div class="img">
-            <h2>Dr. Stone – Tiến Sĩ Đá (2017)</h2>
+            <h2>25. Dr. Stone – Tiến Sĩ Đá (2017)</h2>
             <img src="https://image.lag.vn/upload/news/22/05/27/manga-dr-stone-chua-ket-thuc-2_UZUS.jpg" alt="Dr. Stone – Tiến Sĩ Đá (2017)">
             <div class="text">
                 Yêu thích những tựa phim đề tài khoa học và những chi tiết hài hước, nhẹ nhàng và tiếp thu thêm những kiến thức cực “hack não”? Dr.Stone sẽ làm hài lòng bạn với cốt truyện độc đáo mới lạ của mình.
             </div>
         </div>
+
         <div class="img">
-            <h2>Đứa Con Của Thời Tiết - Weathering With You (2019)</h2>
+            <h2>26. Đứa Con Của Thời Tiết - Weathering With You (2019)</h2>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdthHf_kuwE4cY4Jf1LG7emvrGcY5wi-yZbA&s" alt="Đứa Con Của Thời Tiết - Weathering With You (2019)">
             <div class="text">
                 Đứa Con Của Thời Tiết là một bộ phim anime hay kể về cuộc sống của cậu thiếu niên Hodaka sau khi quyết định rời quê hương để theo đuổi ước mơ ở Tokyo. Tại đây, Hodaka đã gặp được Amano Hina - cô gái trẻ có một khả năng vô cùng đặc biệt đó là có thể thay đổi thời tiết.
             </div>
-        </div><div class="img">
-            <h2>Horimiya - Chuyện Của Hori Và Miyamura (2021)</h2>
+        </div>
+        
+        <div class="img">
+            <h2>27. Horimiya - Chuyện Của Hori Và Miyamura (2021)</h2>
             <img src="https://static2.vieon.vn/vieplay-image/carousel_web_v4/2021/03/09/ittgvue6_1920x1080-horimiya722dea243f074228d200911dba533279_1920_1080.jpg" alt="Horimiya - Chuyện Của Hori Và Miyamura (2021)">
             <div class="text">
                 Bộ anime Horimiya sẽ là sự lựa chọn tuyệt vời cho ai yêu thích thể loại học đường, tình cảm nhẹ nhàng. Không có những trận chiến quyết liệt hay plot twist sâu sắc, đây chỉ đơn giản là bộ anime xoay quanh một chàng trai và một cô gái.
             </div>
         </div>
+
         <div class="img">
-            <h2>Record Of Ragnarok - Đại Chiến Người Và Thần (2021)</h2>
+            <h2>28. Record Of Ragnarok - Đại Chiến Người Và Thần (2021)</h2>
             <img src="https://images.fbox.fpt.vn/wordpress-blog/2023/07/anime-dai-chien-giua-nguoi-va-than-1.jpg" alt="Record Of Ragnarok - Đại Chiến Người Và Thần (2021)">
             <div class="text">
                 Đại Chiến Người Và Thần là một bộ anime nổi tiếng có nội dung xoay quanh cuộc chiến giữa con người và các vị thần trong thần thoại. Các vị thần quyết định tiến hành trận chiến cuối cùng với loài người để quyết định số phận của nhân loại.
             </div>
         </div>
+
         <div class="img">
-            <h2>Komi Can't Communicate - Komi Không Thể Giao Tiếp (2021)</h2>
+            <h2>29. Komi Can't Communicate - Komi Không Thể Giao Tiếp (2021)</h2>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrENWD324myi7IQU6dRi6ykRZ1BRnhJg1_PQ&s" alt="Komi Can't Communicate - Komi Không Thể Giao Tiếp (2021)">
             <div class="text">
                 Komi Không Thể Giao Tiếp là một bộ anime nổi tiếng tập trung vào cuộc sống của Shouko Komi - một cô gái xinh đẹp nhưng mắc chứng khó giao tiếp với người khác. Tuy vẻ ngoài của Komi thu hút sự chú ý của mọi người nhưng cô lại không thể thể hiện ý kiến và cảm xúc của mình với họ.
             </div>
         </div>
+
         <div class="img">
-            <h2>Kubo Không Để Tôi Vô Hình - Kubo-san Wa Boku Wo Yurusanai (2023)</h2>
+            <h2>30. Kubo Không Để Tôi Vô Hình - Kubo-san Wa Boku Wo Yurusanai (2023)</h2>
             <img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/476335puI/anh-mo-ta.png" alt="Kubo Không Để Tôi Vô Hình - Kubo-san Wa Boku Wo Yurusanai (2023)">
             <div class="text">
                 Kubo Không Để Tôi Vô Hình là một bộ anime hay thuộc thể loại tình cảm học đường, được chuyển thể từ manga cùng tên và lên sóng vào đầu năm 2023. 
             </div>
         </div><br>
+
         <div class="text">
             <h3>Ngoài những tác phẩm trên, theo bạn còn anime hay nào nữa không?</h3>
         </div>
+
         <div>
             <button class="back-to-top" onclick="scrollToTop()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
